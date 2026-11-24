@@ -1,0 +1,23 @@
+musicwave/
+├── backend/
+│   ├── app/
+│   │   ├── main.py            # FastAPI REST API + 8 artists, 6 albums, 15 songs
+│   │   ├── models.py          # Pydantic models
+│   │   └── database.py        # Supabase client helper
+│   ├── schema.sql             # PostgreSQL tables for Supabase
+│   ├── requirements.txt
+│   └── .env.example
+└── frontend/
+    ├── index.html
+    ├── package.json
+    ├── .env.example
+    └── src/
+        ├── App.jsx            # Splash loader, theme, nav, search, sections
+        ├── api/musicwave.js  # REST client with local fallback data
+        ├── data/catalog.js    # 8 artists, 6 albums, 15 tracks, 7 curated playlists
+        ├── components/
+        │   ├── Navbar.jsx
+        │   ├── HeroBanner.jsx
+        │   ├── MusicPlayer.jsx
+        │   └── Modals.jsx     # Artist/Album/Playlist/Create-Edit modals
+        └── index.css
